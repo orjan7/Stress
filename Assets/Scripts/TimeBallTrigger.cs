@@ -32,13 +32,11 @@ public class TimeBallTrigger : MonoBehaviour
         //Test set animator controller
         if (_time == 2)
         {
-            Debug.Log("Test 2 sec");
             _TimeBallTwoSec.enabled = true;
             GameObject.FindGameObjectWithTag("TimeBallForSec").SetActive(false);
         }
         else
         {
-            Debug.Log("Test 4 sec");
             _TimeBallForSec.enabled = true;
             GameObject.FindGameObjectWithTag("TimeBallTwoSec").SetActive(false);
         }

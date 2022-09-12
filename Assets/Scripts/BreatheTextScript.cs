@@ -11,6 +11,7 @@ public class BreatheTextScript : MonoBehaviour
 
     void Start()
     {
+        _BreatheIn.SetActive(false);
         _HoldYourBreath.SetActive(false);
         _BrathOut.SetActive(false);
     }
@@ -26,7 +27,6 @@ public class BreatheTextScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("BreatheOut"))
         {
-            Debug.Log("Out");
             _BreatheIn.SetActive(false);
             _HoldYourBreath.SetActive(false);
             _BrathOut.SetActive(true);
@@ -41,7 +41,6 @@ public class BreatheTextScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("StopTrigger"))
         {
-            Debug.Log("Stop");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); // name=menue
         }
     }

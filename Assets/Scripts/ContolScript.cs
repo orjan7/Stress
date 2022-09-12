@@ -12,7 +12,7 @@ public class ContolScript : MonoBehaviour
     }
     public void Stop()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Menue");
     }
 
     public void Quit()
